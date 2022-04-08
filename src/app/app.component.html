@@ -1,0 +1,5 @@
+<button (click)="wave = 'bubble'">Bubble Wave</button>
+<button (click)="wave = 'curve'">Curve Wave</button>
+
+<app-bubble *ngIf="wave === 'bubble'"></app-bubble>
+<app-curve *ngIf="wave === 'curve'"></app-curve>
